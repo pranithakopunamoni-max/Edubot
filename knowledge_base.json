@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "name": "Java",
+      "topics": [
+        {
+          "name": "Class and Object",
+          "keywords": ["class", "object", "instance", "oop", "object oriented"],
+          "definition": "A class is a blueprint that describes data and behavior. An object is a particular instance created from that class.",
+          "example": "If Car is a class with color and drive(), then myCar = new Car() creates an object of Car."
+        },
+        {
+          "name": "Inheritance",
+          "keywords": ["inheritance", "extends", "subclass", "parent class", "child class"],
+          "definition": "Inheritance lets one Java class reuse and extend the fields and methods of another class.",
+          "example": "class Dog extends Animal gives Dog the accessible behavior of Animal and lets Dog add its own behavior."
+        },
+        {
+          "name": "Polymorphism",
+          "keywords": ["polymorphism", "overriding", "overloading", "dynamic binding"],
+          "definition": "Polymorphism means that the same method call or interface can have different behavior depending on the object or arguments.",
+          "example": "An Animal reference can refer to a Dog object, and calling sound() can run Dog's overridden implementation."
+        }
+      ]
+    },
+    {
+      "name": "DBMS",
+      "topics": [
+        {
+          "name": "Primary Key",
+          "keywords": ["primary key", "primary keys", "key constraint"],
+          "definition": "A primary key is a column or set of columns that uniquely identifies each row in a database table. Its values must be unique and not null.",
+          "example": "In a Students table, student_id can be the primary key because each student has a distinct ID."
+        },
+        {
+          "name": "Foreign Key",
+          "keywords": ["foreign key", "foreign keys", "referential integrity"],
+          "definition": "A foreign key is a column or set of columns that refers to a key in another table, helping maintain relationships between rows.",
+          "example": "An Orders table can store customer_id as a foreign key that references Customers.customer_id."
+        },
+        {
+          "name": "SQL JOIN",
+          "keywords": ["join", "joins", "sql join", "inner join", "left join"],
+          "definition": "A SQL JOIN combines related rows from two or more tables using a matching condition.",
+          "example": "SELECT Students.name, Courses.title FROM Students JOIN Courses ON Students.course_id = Courses.id;"
+        }
+      ]
+    },
+    {
+      "name": "Operating Systems",
+      "topics": [
+        {
+          "name": "Process and Thread",
+          "keywords": ["process", "thread", "threads", "multithreading"],
+          "definition": "A process is a running program with its own execution resources. A thread is a path of execution within a process that shares the process's resources.",
+          "example": "A browser can run as a process with separate threads for its user interface, networking, and page work."
+        },
+        {
+          "name": "Deadlock",
+          "keywords": ["deadlock", "deadlock prevention", "deadlock avoidance"],
+          "definition": "A deadlock is a state where two or more processes wait indefinitely for resources held by one another.",
+          "example": "If Process A holds Resource 1 and waits for Resource 2, while Process B holds Resource 2 and waits for Resource 1, both can become stuck."
+        },
+        {
+          "name": "Virtual Memory",
+          "keywords": ["virtual memory", "paging", "page fault", "address space"],
+          "definition": "Virtual memory gives each process an address space and lets the operating system use storage to support memory beyond currently available physical RAM.",
+          "example": "With paging, the operating system moves fixed-size memory pages between RAM and storage when needed."
+        }
+      ]
+    },
+    {
+      "name": "Artificial Intelligence",
+      "topics": [
+        {
+          "name": "Artificial Intelligence",
+          "keywords": ["artificial intelligence", " ai ", "intelligent system"],
+          "definition": "Artificial intelligence is the field of building computer systems that perform tasks associated with abilities such as reasoning, perception, language, or decision-making.",
+          "example": "A tutoring chatbot uses language models to interpret a student's question and generate an explanation."
+        },
+        {
+          "name": "Machine Learning",
+          "keywords": ["machine learning", " ml ", "training data", "supervised learning", "unsupervised learning"],
+          "definition": "Machine learning is a branch of AI in which a model learns patterns from data to make predictions or decisions, instead of being given every rule explicitly.",
+          "example": "A spam classifier can learn from labeled examples of spam and non-spam emails, then predict the class of a new email."
+        },
+        {
+          "name": "Knowledge Representation",
+          "keywords": ["knowledge representation", "knowledge base", "facts", "ontology"],
+          "definition": "Knowledge representation is the way an AI system stores facts and relationships in a form that can be used to reason or answer questions.",
+          "example": "This project stores subject topics as JSON records containing a topic name, definition, example, and keywords."
+        }
+      ]
+    }
+  ]
+}
